@@ -1,12 +1,12 @@
 <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
 <meta name="theme-color" content="{{ theme.android_chrome_color }}">
 
 
 {% if theme.needmoreshare2.enable %}
   {% set needmoreshare2_css = url_for(theme.vendors._internal + '/needsharebutton/needsharebutton.css') %}
-  {% if theme.vendors.needmoreshare2 %}
+  {% if theme.vendors.needmoreshare2_css %}
     {% set needmoreshare2_css = theme.vendors.needmoreshare2_css %}
   {% endif %}
   <link rel="stylesheet" href="{{ needmoreshare2_css }}">
